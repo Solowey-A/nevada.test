@@ -1,0 +1,41 @@
+.meet{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 430px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  @include max-w($screen-sm){
+    height: 556px;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  &__wrap{
+    box-sizing:border-box;
+    max-width: 395px;
+    height: 235px;
+    padding: 10px;
+    background-color: $body-bg;
+    @include max-w($screen-sm){
+      max-width: 480px;
+      padding: 15px 0;
+      max-height: 444px;
+    }
+  }
+
+  &__inner{
+    text-align: center;
+    border: 2px solid $border-second-color;
+    height: 100%;
+    padding: 25px;
+  }
+}
+
+

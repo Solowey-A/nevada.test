@@ -1,0 +1,36 @@
+<?php
+/**
+* Create custom post types.
+*/
+add_action('init', 'create_posttype');
+
+function create_posttype()
+{
+  register_post_type('events',
+    array(
+      'supports' => array('title', 'editor', 'excerpt'),
+      'labels' => array(
+        'name' => __('Events'),
+        'singular_name' => __('Events')
+      ),
+      'public' => true,
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-format-quote',
+      'rewrite' => array('slug' => 'events'),
+      'has_archive' => true,
+      )
+  );
+  register_post_type('logo',
+    array(
+      'supports' => array('title', 'editor'),
+      'labels' => array(
+        'name' => __('Logo'),
+        'singular_name' => __('Logo')
+      ),
+      'public' => true,
+      'menu_position' => 6,
+      'menu_icon' => 'dashicons-images-alt2',
+      'rewrite' => array('slug' => 'logo'),
+      )
+  );
+}

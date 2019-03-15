@@ -1,0 +1,44 @@
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 78px;
+  width: 100%;
+  font-size: 23px;
+
+  &__item{
+    height: 25px;
+    width: 25px;
+    color: $social-main;
+    transition: 0.3s;
+    margin-right: 3px;
+
+
+    &:hover{
+      color: $social-hover;
+    }
+  }
+
+  &__instagram{
+    height: 25px;
+    width: 25px;
+    color: $social-main;
+    transition: 0.3s;
+
+    &:hover{
+      color: $social-hover;
+    }
+  }
+
+  &__facebook{
+    height: 25px;
+    width: 25px;
+    color: $social-main;
+    transition: 0.3s;
+
+    &:hover{
+      color: $social-hover;
+    }
+  }
+
+}
