@@ -28,11 +28,10 @@
                 <p class="date reset">
                   <?php the_sub_field("date");?>
                 </p>
-                <h2 class="main-title">
+                <h2 class="main-title ex-subtitle-media">
                   <?php the_sub_field("title");?>
 
                 </h2>
-
 
                 <?php
 
@@ -44,16 +43,9 @@
               </div>
                 <?php endif; ?>
 
-
-
-
-
-
-
-                <p class="main-subtitle">
+                <p class="main-subtitle ex-subtitle">
                   <?php the_sub_field("subtitle");?>
                 </p>
-
 
                 <?php
 
@@ -80,11 +72,7 @@
 
         ?>
 
-
-
-
       </div>
-
 
 </section>
     <?php get_template_part( 'template-parts/contacts'); ?>

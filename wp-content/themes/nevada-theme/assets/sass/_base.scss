@@ -62,6 +62,7 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
 // oswald / 20px /
 .main-title{
   font-family: $second-font;
@@ -69,10 +70,8 @@ section {
   font-weight: $font-weight;
   text-transform: uppercase;
   line-height: 30px;
-
   margin: 0;
   @include fluid-font(16px, 20px, 320px, 2560px);
-
 }
 
 // oswald / 20px / white colour
@@ -96,7 +95,6 @@ section {
   line-height: 30px;
 }
 
-
 // Garamond pro / 20px /
 .main-subtitle{
   font-family: $font-family;
@@ -113,7 +111,6 @@ section {
   color: $second-color;
   line-height: 30px;
   @include fluid-font(16px, 20px, 320px, 2560px);
-
 }
 
 // Garamond pro / 16px /
@@ -147,6 +144,7 @@ section {
   color: $third-color;
   line-height: 30px;
 }
+
 // Garamond pro it / 20px /
 .second-subtitle{
   color: $second-color;
@@ -154,6 +152,7 @@ section {
   line-height: 30px;
   @include fluid-font(16px, 20px, 320px, 2560px);
 }
+
 // Garamond pro it / 16px /
 .third-subtitle{
   color: $text-color;
@@ -180,11 +179,15 @@ section {
   margin: 0;
 }
 
-
 //for internet explorer
 .ex-subtitle{
   max-width: 756px;
 }
+
+.ex-subtitle-media{
+  max-width: 550px;
+}
+
 .html--hidden{
   height: 100%;
   width: 100%;

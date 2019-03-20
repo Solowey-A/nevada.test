@@ -20,6 +20,8 @@ function create_posttype()
       'has_archive' => true,
       )
   );
+
+
   register_post_type('logo',
     array(
       'supports' => array('title', 'editor'),

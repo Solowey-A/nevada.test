@@ -4,16 +4,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include max-w($screen-lg){
     padding: 50px 0 0;
   }
-
-
 }
+
 .publication{
   display: flex;
   width: 100%;
   padding: 0 0 50px 0;
+
   @include max-w($screen-lg){
     padding: 25px 0;
   }
@@ -40,6 +41,7 @@
       position: absolute;
       top: -4px;
       align-self: center;
+
       @include max-w($screen-md){
         width: 100%;
       }
@@ -56,8 +58,6 @@
   }
 
   &__image{
-    //max-width: 545px;
-    //max-height: 225px;
     overflow: hidden;
     padding-top: 25px;
   }

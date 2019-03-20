@@ -40,6 +40,11 @@ if( function_exists('acf_add_options_page') ) {
     'menu_title'	=> 'Events',
     'parent_slug'	=> 'theme-general-settings',
   ));
+  acf_add_options_sub_page(array(
+    'page_title' 	=> 'Theme Events Settings',
+    'menu_title'	=> '404',
+    'parent_slug'	=> 'theme-general-settings',
+  ));
 }
 
 if ( ! function_exists( 'theme_setup' ) ) :
@@ -115,7 +120,7 @@ function theme_scripts() {
 	//wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/assets/css/normalize.css' );
 	wp_enqueue_style( 'theme-main-style', get_template_directory_uri() . '/assets/dist/main.css' );
-	wp_enqueue_style( 'theme-custom-style', get_template_directory_uri() . '/assets/css/custom.css' );
+  	wp_enqueue_style( 'theme-custom-style', get_template_directory_uri() . '/assets/css/custom.css' );
   // Scripts
 	wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/assets/scripts/main.js', array('jquery'), false, true );
   wp_enqueue_script( 'loaded-script', get_template_directory_uri() . '/assets/scripts/load-scripts.js', array('jquery'), false, true );

@@ -18,12 +18,9 @@
   border: transparent;
   cursor: pointer;
 
-
-
   &:hover{
     color: $text-color;
   }
-
 }
 .wpcf7-submit{
   display: flex;
@@ -43,7 +40,6 @@
   background: transparent;
   outline: none;
   cursor: pointer;
-
 
   &:hover{
     color: $text-color;
@@ -72,6 +68,7 @@
     .wpcf7-submit{
       max-width: 110px;
     }
+
     &:hover{
       color: $text-color;
     }
@@ -82,6 +79,7 @@
   right: 0;
   font-size: 13px;
 }
+
 .btn__wrap{
   width: 100%;
   display: flex;
@@ -108,19 +106,19 @@
   border: transparent;
   cursor: pointer;
   display: none;
+
   @include max-w($screen-lg){
     display: flex;
   }
+
   &:hover {
     color: $text-color;
   }
 }
 
-
 .fa-calendar{
   margin-right: 8px;
 }
-
 
 .btn__back{
   flex-direction: row;
@@ -149,8 +147,36 @@
   margin-right: 15px;
 }
 
+.send__button{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 32px;
+  color: $third-color;
+  &:hover{
+    color: $text-color;
+  }
+}
 
+#submit_button{
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  height: 20px;
+  width: 130px;
+  padding: 5px;
+  border: transparent;
 
+}
+
+.sends{
+  position: absolute;
+  bottom: 0;
+
+}
 
 
 

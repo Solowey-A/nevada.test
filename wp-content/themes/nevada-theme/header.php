@@ -24,14 +24,24 @@
 	</header>
 
     <div class="wrapper <?php echo is_front_page() ? 'wrapper--home' : null ?>"
-
-
       <?php
-      $banner = get_field('home_banner');
 
-      if ($banner) : ?>
-        style="background-image: url('<?php echo $banner; ?>')"
-      <?php endif;
+      if( is_404()) {
+        $error_banner = get_field('banner', 'option');
+        if ($error_banner) : ?>
+          style="background-image: url('<?php echo $error_banner; ?>')"
+          <?php endif;
+      }
+
+      ?>
+      <?php
+
+      if( is_singular('events')) {
+        $events_banner = get_field('events_banner');
+        if ($events_banner) : ?>
+          style="background-image: url('<?php echo $events_banner; ?>')"
+        <?php endif;
+      }
 
       ?>
 
@@ -43,18 +53,37 @@
           style="background-image: url('<?php echo $events_banner; ?>')"
         <?php endif;
       }
-
       ?>
 
->
+      <?php
+      $banner = get_field('home_banner');
+
+      if ($banner) : ?>
+        style="background-image: url('<?php echo $banner; ?>')"
+      <?php endif;
+
+      ?>>
+
         <div class="overlay"></div>
         <?php
+
         $header_logo = get_field('header_logo', 'option');
         if ($header_logo) : ?>
 
-
           <a href="<?php echo get_home_url( null, '/', 'http' ); ?>" class="wrapper__logo"><img class="logo-item" src="<?php echo $header_logo ?>"></a>
 
-        <?php endif;
-        ?>
+        <?php endif; ?>
+
 </div>
+
+    <?php
+
+    if( is_404()) {
+      $error_logo = get_field('error_logo', 'option');
+      if ($error_logo) : ?>
+
+        <a href="<?php echo get_home_url( null, '/', 'http' ); ?> " class="link-error"><img src="<?php echo $error_logo ?>"></a>
+      <?php endif;
+    }
+
+    ?>

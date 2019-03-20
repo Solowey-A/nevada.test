@@ -15,35 +15,6 @@ $(window).on('load', function(){
   });
 });
 
-
-//map
-function initMap(){
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 8,
-    center: {lat: 49.441575, lng: 32.064699}
-  });
-  var geocoder = new google.maps.Geocoder();
-
-  document.getElementById('submit').addEventListener('click', function() {
-    geocodeAddress(geocoder, map);
-  });
-}
-
-function geocodeAddress(geocoder, resultsMap) {
-  var address = document.getElementById('address').value;
-  geocoder.geocode({'address': address}, function(results, status) {
-    if (status === 'OK') {
-      resultsMap.setCenter(results[0].geometry.location);
-      var marker = new google.maps.Marker({
-        map: resultsMap,
-        position: results[0].geometry.location
-      });
-    } else {
-      alert('Geocode was not successful for the following reason: ' + status);
-    }
-  });
-}
-
 let hamburgerButton  = document.getElementById("toggle");
 let menu__hamburger = document.getElementById("toggle");
 let html__hide = document.getElementById("html--hidden");
@@ -60,17 +31,9 @@ window.addEventListener("orientationchange", function() {
   menu__hamburger.classList.remove("menu__show");
 }, false);
 
-function $(selector) {
-  return document.querySelector(selector);
-}
 
-$('.label-txt').addEventListener('focus', function () {
-  this.classList.add('label-active');
-}, true);
 
-$('.label-txt').addEventListener('blur', function () {
-  this.classList.remove('label-active');
-}, true);
+
 
 /*!
  * Masonry PACKAGED v4.2.2

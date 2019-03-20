@@ -19,7 +19,7 @@
   </div>
   <div class="btn__wrap">
     <a href="#" class="btn__calendar"><i class="far fa-calendar"></i>calendar</a>
-    <a href="events_details.html" class="btn_arrow">read more<i class="fas fa-chevron-right"></i></a>
+    <a href="<?php echo get_the_permalink(); ?>" class="btn_arrow">read more<i class="fas fa-chevron-right"></i></a>
   </div>
 
 </div>

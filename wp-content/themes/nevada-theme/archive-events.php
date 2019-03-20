@@ -25,18 +25,22 @@
 
   <?php endif; ?>
 
-
         </div>
 
+        <aside class="calendar" id="calendar">
+          <button class="btn_close"><i class="fas fa-times"></i></button>
+          <?php if ( is_active_sidebar( 'sidebar-1' ) ){ ?>
+
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+
+          <?php } ?>
+        </aside>
 
       </div>
       <?php get_template_part( 'template-parts/contacts'); ?>
+
   </div>
 
-
-
-
-  </section>
 </main>
 
 <?php get_footer(); ?>

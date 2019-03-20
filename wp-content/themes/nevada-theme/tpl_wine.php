@@ -19,7 +19,6 @@
       ?>
       <div class="product__container">
 
-
             <?php
 
             if( have_rows('wine_products') ):
@@ -28,23 +27,15 @@
 
         <div class="product__item">
           <div class="product__image">
+
                   <img src="<?php the_sub_field("bottle_image");?>" alt="<?php the_sub_field("image_alt");?>">
 
-
             <div class="product__capacity">
-
-
-
-                  <img src="<?php the_sub_field("capacity_image");?>" alt="<?php the_sub_field("image_alt");?>">
-
+                                <img src="<?php the_sub_field("capacity_image");?>" alt="<?php the_sub_field("image_alt");?>">
                   <span class="liter"><?php the_sub_field("bottle_liter");?></span>
-
-
             </div>
+
           </div>
-
-
-
 
           <div class="product__description">
 
@@ -65,20 +56,14 @@
 
             ?>
 
-
           </div>
         </div>
 
               <?php endwhile;
 
             else :
-
             endif;
-
             ?>
-
-
-
 
       </div>
 

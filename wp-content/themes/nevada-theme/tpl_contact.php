@@ -17,7 +17,6 @@
     };
     ?>
 
-
     <div class="contact__description">
 
       <?php
@@ -37,18 +36,19 @@
         <?php echo do_shortcode('[google_map_easy id="1"]')?>
         </div>
 
-
         <div class="contact__hours">
 
           <?php
           if( have_rows('working_hours') ):
 
           while ( have_rows('working_hours') ) : the_row();?>
+
           <h2 class="second-title centered-text reset"><?php the_sub_field('title');?></h2>
+
           <div class="day_hours">
+
             <p class="date reset"><?php the_sub_field('date');?></p>
             <p class="hours reset"><?php the_sub_field('hours');?></p>
-
 
           </div>
           <?php endwhile;

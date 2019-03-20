@@ -43,6 +43,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 //font-family: 'GaramondPremrPro-Smbd'
 @font-face {
   font-family: 'GaramondPremrPro-Smbd';
@@ -58,16 +59,12 @@
   font-style: normal;
 }
 
-
-
 // Main title style
 h1, h2, h3, h4, h5 {
   font-family: $second-font;
 }
 
-
 h2{
   @include fluid-font(16px, 20px, 320px, 2560px);
-
 }
 

@@ -16,126 +16,130 @@ select {
   transition: all 0.5s ease-in-out;
 }
 
-.my-form{
-  border: 2px solid #781241;
-  height: 500px;
-  width: 488px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  @include max-w($screen-sm){
-    width: 290px;
-    padding: 15px;
-    height: 445px;
+.contacts_wrap {
+  .wpcf7-mail-sent-ok{
+    position: absolute;
+    bottom: 30px;
+  }
+  .wpcf7 {
+    border: 2px solid #781241;
+    height: 500px;
+    width: 488px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 
+    @include max-w($screen-sm) {
+      width: 290px;
+      padding: 15px;
+      height: 445px;
+    }
   }
 
+  .wpcf7-form-control-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    border: transparent;
+    height: 53px;
+  }
+
+  .wpcf7-form-control {
+    background: transparent;
+    border: transparent;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid $border-third-color;
+    transition: 0.4s;
+
+    &:focus{
+      border-color: $border-fourth-color;
+    }
+  }
+
+  .filed_label {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .group {
+    min-height: 53px;
+    position: relative;
+    width: 100%;
+  }
 }
 
-.form-item{
-  height: 53px;
-  position: relative;
-  border: 1px solid red;
-}
-
-.your_name, .email, .subject{
-  position: absolute;
-  bottom: 0;
-  transition: all 0.5s ease-in-out;
-}
-
-.name_field{
-  height: 30px;
-  bottom: 0;
-}
-
-.form__field{
-  padding: 10px;
-position: absolute;
-bottom: 0;
-width: 500px;
-border: 1px solid red;
-z-index: 3;
-
-}
-.wpcf7-form-control-wrap{
-  width: 500px;
-}
 .message-wrap{
   height: 153px;
   position: relative;
- margin-bottom: 35px;
- @include max-w($screen-sm){
-    margin: 0;
+  margin-bottom: 35px;
+  transition: 0.4s;
+
+  .message{
+    position: absolute;
+    top: 0;
+  }
+
+  @include max-w($screen-sm){
+    margin: 0 0 20px 0;
  }
 }
-.message{
-  position: absolute;
-  top: 21px;
-}
+
 #message{
-  height: 130px;
+  height: 30px;
   position: absolute;
   bottom: 0;
-  border: transparent;
-  border-bottom: 1px solid $border-third-color;
   resize: none;
+  transition: 0.4s;
+  border: transparent;
 
   @include max-w($screen-sm){
     margin: 0;
   }
-
 }
 
+.textarea-504{
+  position: absolute;
+  top: 0;
+}
 
-.name_field:focus > .your_name{
- bottom: 50%;
-font-size:$fifth-font-size;
-color:$fifth-color;
- &:focus{
-  border-bottom: 1px solid $border-fourth-color;
+.message-label{
+  position: absolute;
+  top: 20px;
+}
+
+.filed_label{
+  transition: 0.4s ease-in-out;
+  position: absolute;
+  top: 20px;
+}
+
+.message-line{
+  border-bottom: 1px solid $border-third-color;
   width: 100%;
- }
+  position: absolute;
+  bottom: -100px;
 }
-//
-//.form__field:focus ~ .email, .form__field:valid ~ .email {
-//  bottom: 50%;
-//  font-size:$fifth-font-size;
-//  color:$fifth-color;
-//  &:focus{
-//  border-bottom: 1px solid $border-fourth-color;
-//  width: 100%;
-//
-//  }
-//}
-//
-//#email:invalid:not(:focus):not(:placeholder-shown) {
-//  background: #ff857b;
-//  & + .email {
-//    font-size:$fifth-font-size;
-//    color:$fifth-color;
-//    font-family: $font-family;
-//    top: 0;
-//  }}
-//
-//.form__field:focus ~ .subject, .form__field:valid ~.subject{
-//  bottom: 50%;
-//  font-size:$fifth-font-size;
-//  color:$fifth-color;
-//  &:focus{
-//    border-bottom: 1px solid $border-fourth-color;
-//    width: 100%;
-//
-//  }
-//}
-//
-//#message:focus ~ .message, #message:valid ~ .message {
-//  top: 0;
-//  font-size:$fifth-font-size;
-//  color:$fifth-color;
-//  border-color: red;
-//  width: 100%;
-//  transition: all 0.5s ease-in-out;
-//}
+
+.label_focus {
+  transition: 0.4s ease-in-out;
+  top: -5%;
+  font-size: $fifth-font-size;
+  color: $fifth-color;
+  ~.message-line{
+    border-color: $border-fourth-color;
+  }
+}
+
+
+
+

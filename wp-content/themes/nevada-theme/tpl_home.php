@@ -31,7 +31,6 @@
 
     </section>
 
-
     <div class="instaphoto">
 
         <?php
@@ -89,8 +88,6 @@
           </div>
         </div>
       </div>
-
-
 
       <?php get_template_part( 'template-parts/contacts'); ?>
 

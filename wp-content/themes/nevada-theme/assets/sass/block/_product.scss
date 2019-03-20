@@ -6,6 +6,7 @@
   max-width: $container-s-width;
   width: 100%;
   margin: 0 auto;
+
   @include max-w($screen-lg){
     padding-top: 50px;
   }
@@ -20,25 +21,26 @@
     min-height: 400px;
     margin-top: 50px;
     padding: 2px 3px 100px 3px;
+
     &:before{
       content: '';
       display: block;
       border-bottom: 1px solid $border-main-color;
       width: 99%;
     }
+
     @include max-w($screen-lg){
       padding: 2px 3px 50px 3px;
       margin-top: 25px;
     }
-
   }
-
 
   &__item{
     width: 100%;
     border-bottom: 1px solid $border-main-color;
     display: flex;
     flex-direction: row;
+
     @include max-w($screen-md){
       flex-direction: column;
       align-items: center;
@@ -57,7 +59,7 @@
     position: relative;
 
     @include max-w($screen-md){
-    border: transparent;
+      border: transparent;
       width: 100%;
       padding-top: 100px;
       position: relative;
@@ -80,6 +82,7 @@
           left: 4px;
         }
     }
+
     h3{
       font-family: $second-font;
       @include fluid-font(14px, 20px, 320px, 2560px);
@@ -99,6 +102,7 @@
       line-height: 30px;
       @include fluid-font(16px, 20px, 320px, 2560px);
       }
+
     @include max-w($screen-md){
       width: 100%;
       padding: 14px 0;
@@ -122,9 +126,8 @@
     color: $third-color;
 
   }
-
-
 }
+
 @include max-w($screen-md){
   .title_absolute{
     position: absolute;
