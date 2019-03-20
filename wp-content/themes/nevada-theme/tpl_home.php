@@ -55,7 +55,7 @@
       <div class="subscribe">
         <?php echo do_shortcode( '[contact-form-7 id="87" title="Contact form 1"]' ); ?>
       </div>
-
+    </div>
       <div class="meet"
 
         <?php
@@ -88,10 +88,10 @@
           </div>
         </div>
       </div>
-
+    <div class="page-container">
       <?php get_template_part( 'template-parts/contacts'); ?>
 
-</div>
+    </div>
   </main>
 
 <?php get_footer(); ?>

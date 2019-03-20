@@ -43,7 +43,7 @@
               </div>
                 <?php endif; ?>
 
-                <p class="main-subtitle ex-subtitle">
+                <p class="main-subtitle ex-subtitle-media">
                   <?php the_sub_field("subtitle");?>
                 </p>
 

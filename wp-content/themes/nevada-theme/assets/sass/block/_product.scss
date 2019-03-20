@@ -22,13 +22,6 @@
     margin-top: 50px;
     padding: 2px 3px 100px 3px;
 
-    &:before{
-      content: '';
-      display: block;
-      border-bottom: 1px solid $border-main-color;
-      width: 99%;
-    }
-
     @include max-w($screen-lg){
       padding: 2px 3px 50px 3px;
       margin-top: 25px;
@@ -37,7 +30,7 @@
 
   &__item{
     width: 100%;
-    border-bottom: 1px solid $border-main-color;
+    border-top: 1px solid $border-main-color;
     display: flex;
     flex-direction: row;
 

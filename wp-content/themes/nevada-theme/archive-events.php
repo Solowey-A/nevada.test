@@ -37,6 +37,7 @@
         </aside>
 
       </div>
+
       <?php get_template_part( 'template-parts/contacts'); ?>
 
   </div>

@@ -21,7 +21,7 @@
           </div>
           <div class="btn__wrap">
 
-            <a href="http://nevada.test/events/" class="btn__back"><i class="fas fa-chevron-left"></i>to events</a>
+            <a href="http://test16.f5-cloud.top/events/" class="btn__back"><i class="fas fa-chevron-left"></i>to events</a>
             <a href="#" class="btn__calendar"><i class="far fa-calendar"></i>calendar</a>
           </div>
         </div>

@@ -4,6 +4,7 @@
   background-position: center;
   height: 430px;
   width: 100%;
+  min-width: 320px;
   position: relative;
   z-index: -1;
   display: flex;
@@ -24,9 +25,10 @@
     height: 235px;
     padding: 10px;
     background-color: $body-bg;
+
     @include max-w($screen-sm){
       max-width: 480px;
-      padding: 15px 0;
+      padding: 15px 15px;
       max-height: 444px;
     }
   }

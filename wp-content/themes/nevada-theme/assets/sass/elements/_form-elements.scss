@@ -17,9 +17,24 @@ select {
 }
 
 .contacts_wrap {
+  .wpcf7-not-valid-tip{
+    position: absolute;
+    right: 0;
+    border-color: transparent !important;
+  }
+
   .wpcf7-mail-sent-ok{
     position: absolute;
-    bottom: 30px;
+    width: 80%;
+    top: 85%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: transparent !important;
+
+    @include max-w($screen-sm) {
+      top: 85%;
+    }
   }
   .wpcf7 {
     border: 2px solid #781241;
@@ -75,6 +90,11 @@ select {
     min-height: 53px;
     position: relative;
     width: 100%;
+  }
+
+  .wpcf7-validation-errors{
+    position: absolute;
+    opacity: 0;
   }
 }
 

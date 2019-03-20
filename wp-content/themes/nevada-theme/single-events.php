@@ -12,7 +12,9 @@
     endif; ?>
 
   <?php endwhile; ?>
-
+  <div class="page-container">
+  <?php get_template_part( 'template-parts/contacts'); ?>
+  </div>
 </main>
 
 <?php get_footer(); ?>

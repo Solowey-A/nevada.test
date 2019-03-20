@@ -78,6 +78,8 @@
   position: absolute;
   right: 0;
   font-size: 13px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .btn__wrap{
@@ -85,10 +87,12 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+
   @include max-w($screen-lg){
     justify-content: space-between;
   }
 }
+
 .btn__calendar{
   flex-direction: row;
   justify-content: flex-start;
@@ -156,6 +160,14 @@
   justify-content: flex-end;
   height: 32px;
   color: $third-color;
+
+  .wpcf7-submit{
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    height: 30px !important;
+  }
+
   &:hover{
     color: $text-color;
   }

@@ -69,11 +69,17 @@
   &__mail{
     font-size: $font-size;
     border: transparent;
+    width: 100%;
 
     &::placeholder{
       padding: 0;
       font-size: $font-size;
     }
+  }
+
+  .wpcf7-validation-errors{
+    position: absolute;
+    opacity: 0;
   }
 }
 
@@ -82,11 +88,6 @@
 }
 .alert{
   border-color: #f00;
-}
-
-.wpcf7-validation-errors{
-  position: absolute;
-  top: 9999px;
 }
 
 .submit__wrap{
@@ -99,7 +100,16 @@
   align-items: center;
   color: $third-color;
 
+  @include max-w($screen-sm){
+    width: 50%;
+  }
+
   &:hover{
     color: $text-color;
   }
+}
+.wpcf7-validation-errors{
+  z-index: -1 !important;
+  position: absolute !important;
+  bottom: -50% !important;
 }
